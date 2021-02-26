@@ -1,0 +1,20 @@
+---
+layout: layout.liquid
+pageTitle: Welcome to my blog
+---
+<!-- import '@lrnwebcomponents/meme-maker';
+import '@lrnwebcomponents/moar-sarcasm'; -->
+
+{% for post in collections.posts %}
+    <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+    <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+{% endfor %}
+
+<!-- <meme-maker
+image-url="https://images.immediate.co.uk/production/volatile/sites/3/2021/02/Super-Bowl-meme-d53799a.jpg?quality=90&resize=620,413"
+top-text="trying to figure out"
+bottom-text="web components">
+</meme-maker>
+<moar-sarcasm>
+"trying to figure out web components"
+</moar-sarcasm> -->
