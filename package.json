@@ -1,5 +1,6 @@
 {
     "scripts": {
-        "build": "eleventy"
+        "build": "env NODE_ENV=production npx eleventy --pathprefix 'eleventy-gh-demo'",
+        "serve": "npx eleventy --serve"
     }
 }
