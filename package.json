@@ -1,5 +1,5 @@
-[...]
-"scripts": {
-    "build": "eleventy"
-},
-[...]
+{
+    "scripts": {
+        "build": "eleventy"
+    }
+}
